@@ -72,6 +72,26 @@ header .container .header .icons {
 #detail .container .detail .card .content .price {
   color: red;
 }
+#detail .container .button {
+  display: flex;
+  justify-content: center;
+}
+#detail .container .button button {
+  position: relative;
+  bottom: 150px;
+  right: 200px;
+  color: white;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: red;
+  transition: all 0.3s;
+}
+#detail .container .button button:hover {
+  cursor: pointer;
+  border: 1px solid red;
+  color: red;
+  background-color: transparent;
+}
 
 footer {
   padding: 7rem 0;

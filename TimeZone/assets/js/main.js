@@ -3,6 +3,7 @@ const cards = document.querySelector(".popular-cards");
 const header = document.querySelector("header");
 const loadMore = document.querySelector(".loadMore");
 const menu = document.querySelector(".fa-bars");
+const navbar = document.querySelector("nav");
 let limit = 3;
 
 let productCopy;
@@ -43,5 +44,10 @@ loadMore.addEventListener("click", function () {
 });
 
 menu.addEventListener("click", function () {
-  
+  if (this.className === "fa-solid fa-bars") {
+    this.className = "fa-solid fa-x";
+  } else {
+    this.className = "fa-solid fa-bars";
+  }
+  header.classList.toggle(".show");
 });

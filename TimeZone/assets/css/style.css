@@ -24,9 +24,6 @@ header {
 header .show {
   display: none;
 }
-header .fa-bars {
-  display: none;
-}
 header.scrollHeader {
   box-shadow: 1px 1px 6px black;
   position: fixed;
@@ -51,6 +48,9 @@ header .container .header nav ul a {
 header .container .header nav ul a:hover {
   color: red;
 }
+header .container .header .fa-bars {
+  display: none;
+}
 header .container .header .icons {
   display: flex;
   align-items: center;
@@ -68,6 +68,9 @@ header .container .header .icons {
   }
 }
 
+#hero-banner {
+  background-color: #f0f0f2;
+}
 #hero-banner .container .hero-banner {
   display: flex;
   align-items: center;
@@ -83,6 +86,9 @@ header .container .header .icons {
 #hero-banner .container .hero-banner .content h1 {
   color: #0b1c39;
   font-size: 96px;
+}
+#hero-banner .container .hero-banner .content p {
+  font-family: "Roboto", sans-serif;
 }
 #hero-banner .container .hero-banner .content button {
   width: 20%;
@@ -160,7 +166,7 @@ header .container .header .icons {
   align-items: center;
 }
 #popular-items .container .popular-items .heading {
-  padding: 10rem 0;
+  padding-top: 10rem;
   text-align: center;
   width: 50%;
 }
@@ -171,6 +177,7 @@ header .container .header .icons {
   font-size: 16px;
   color: gray;
   padding: 10px 0;
+  font-family: "Roboto", sans-serif;
 }
 #popular-items .container .popular-items .popular-cards {
   padding: 50px 0;
@@ -189,7 +196,6 @@ header .container .header .icons {
 }
 #popular-items .container .popular-items .popular-cards .card p {
   font-size: 18px;
-  color: red;
   padding: 19px 0;
 }
 #popular-items .container .popular-items .popular-cards .card a {
@@ -245,6 +251,7 @@ header .container .header .icons {
 }
 #watchOfChoice .container .watchOfChoice .content p {
   color: gray;
+  font-family: "Roboto", sans-serif;
 }
 #watchOfChoice .container .watchOfChoice .content a {
   width: 50%;
@@ -297,6 +304,7 @@ header .container .header .icons {
 }
 #watchOfChoicetwo .container .watchOfChoice .content p {
   color: gray;
+  font-family: "Roboto", sans-serif;
 }
 #watchOfChoicetwo .container .watchOfChoice .content a {
   width: 50%;
@@ -351,6 +359,10 @@ footer .container .footer .ftr-sec img {
 }
 footer .container .footer .ftr-sec p {
   color: gray;
+  font-family: "Roboto", sans-serif;
+}
+footer .container .footer .ftr-sec h3 {
+  font-family: "Roboto", sans-serif;
 }
 footer .container .footer .ftr-sec ul {
   display: flex;
@@ -359,6 +371,7 @@ footer .container .footer .ftr-sec ul {
 }
 footer .container .footer .ftr-sec ul a {
   color: gray;
+  font-family: "Roboto", sans-serif;
 }
 footer .container .footer .ftr-sec ul a:hover {
   color: red;

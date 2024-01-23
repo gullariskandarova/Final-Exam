@@ -1,6 +1,7 @@
 const id = new URLSearchParams(window.location.search).get("id");
 const BASE_URL = "http://localhost:8080";
 const detail = document.querySelector(".detail");
+const goBack = document.querySelector(".goBack");
 async function getData() {
   try {
     let res = await axios(`${BASE_URL}/products/${id}`);
@@ -22,3 +23,7 @@ function drawDetail(data) {
 </div>
     `;
 }
+
+goBack.addEventListener("click", function () {
+  window.history.back();
+});

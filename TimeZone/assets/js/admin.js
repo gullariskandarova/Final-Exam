@@ -8,7 +8,7 @@ let productCopy;
 async function getAllData() {
   try {
     let res = await axios(`${BASE_URL}/products`);
-    productCopy = res.data;
+    productCopy = [...res.data];
     drawTable(res.data);
   } catch (error) {
     console.log(error.message);
@@ -69,11 +69,8 @@ sort.addEventListener("click", function () {
     this.innerText = "DESC";
     sorted = productCopy.sort((a, b) => a.title.localeCompare(b.title));
   } else if (this.innerText === "DESC") {
-    this.innerText = "DEFAULT";
-    sorted = productCopy.sort((a, b) => b.title.localeCompare(a.title));
-  } else {
     this.innerText = "ASC";
-    sorted = productCopy;
+    sorted = productCopy.sort((a, b) => b.title.localeCompare(a.title));
   }
   drawTable(sorted);
 });
