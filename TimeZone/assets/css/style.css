@@ -21,9 +21,6 @@ header {
   background-color: #fff;
   padding: 30px 0;
 }
-header .show {
-  display: none;
-}
 header.scrollHeader {
   box-shadow: 1px 1px 6px black;
   position: fixed;
