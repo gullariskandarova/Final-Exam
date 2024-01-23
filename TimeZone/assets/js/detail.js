@@ -18,7 +18,7 @@ function drawDetail(data) {
     <div class="content">
         <h1 class="title">${data.title}</h1>
         <p class="desc">${data.desc}</p>
-        <p class="price">${data.price}</p>
+        <p class="price">$${data.price}</p>
     </div>
 </div>
     `;
