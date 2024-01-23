@@ -5,6 +5,7 @@
   text-decoration: none !important;
   list-style: none;
   font-family: "Josefin Sans", sans-serif;
+  outline: none;
 }
 .container {
   max-width: 1200px;
@@ -81,24 +82,50 @@ header {
   }
 }
 
-#table{
-    .container{
-        .table{
-            display: flex;
-            justify-content: center;
-            table,th,td{
-                padding: 10px 30px;
-                border: 1px solid ;
-                border-collapse: collapse;
-                text-align: center;
-                i{
-                    font-size: 25px;
-                }
-                img{
-                    width: 100px;
-                }
-            }
+#table {
+  .container {
+    .table {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .inputs {
+        display: flex;
+        gap: 5rem;
+        padding: 20px 0;
+        input {
+          padding: 10px;
+          width: 300px;
         }
+        button {
+          padding: 10px;
+          width: 20%;
+          color: white;
+          padding: 10px;
+          border: 1px solid red;
+          background-color: red;
+          transition: all 0.3s;
+          &:hover {
+            cursor: pointer;
+            border: 1px solid red;
+            color: red;
+            background-color: transparent;
+          }
+        }
+      }
+      table,
+      th,
+      td {
+        padding: 10px 30px;
+        border: 1px solid;
+        border-collapse: collapse;
+        text-align: center;
+        i {
+          font-size: 25px;
+        }
+        img {
+          width: 100px;
+        }
+      }
     }
-
+  }
 }

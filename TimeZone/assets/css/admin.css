@@ -5,6 +5,7 @@
   text-decoration: none !important;
   list-style: none;
   font-family: "Josefin Sans", sans-serif;
+  outline: none;
 }
 
 .container {
@@ -80,17 +81,48 @@ header .container .header .icons {
 
 #table .container .table {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-#table .container .table table, #table .container .table th, #table .container .table td {
+#table .container .table .inputs {
+  display: flex;
+  gap: 5rem;
+  padding: 20px 0;
+}
+#table .container .table .inputs input {
+  padding: 10px;
+  width: 300px;
+}
+#table .container .table .inputs button {
+  padding: 10px;
+  width: 20%;
+  color: white;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: red;
+  transition: all 0.3s;
+}
+#table .container .table .inputs button:hover {
+  cursor: pointer;
+  border: 1px solid red;
+  color: red;
+  background-color: transparent;
+}
+#table .container .table table,
+#table .container .table th,
+#table .container .table td {
   padding: 10px 30px;
   border: 1px solid;
   border-collapse: collapse;
   text-align: center;
 }
-#table .container .table table i, #table .container .table th i, #table .container .table td i {
+#table .container .table table i,
+#table .container .table th i,
+#table .container .table td i {
   font-size: 25px;
 }
-#table .container .table table img, #table .container .table th img, #table .container .table td img {
+#table .container .table table img,
+#table .container .table th img,
+#table .container .table td img {
   width: 100px;
 }/*# sourceMappingURL=admin.css.map */

@@ -1,1 +1,74 @@
-/*# sourceMappingURL=detail.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+}
+header.scrollHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+header .container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+header .container .header nav ul a {
+  color: black;
+}
+header .container .header .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#detail .container .detail {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+#detail .container .detail .card {
+  display: flex;
+  align-items: center;
+}
+#detail .container .detail .card .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+#detail .container .detail .card .content .title {
+  font-size: 40px;
+  color: #0b1c39;
+}
+#detail .container .detail .card .content p {
+  font-size: 20px;
+}
+#detail .container .detail .card .content .price {
+  color: red;
+}/*# sourceMappingURL=detail.css.map */

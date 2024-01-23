@@ -35,6 +35,9 @@ header {
           gap: 1.5rem;
           a {
             color: black;
+            &:hover {
+              color: red;
+            }
           }
         }
       }
@@ -141,13 +144,13 @@ header {
         }
       }
       .popular-cards {
-        padding: 20px 0;
+        padding: 50px 0;
         display: flex;
         gap: 2rem;
         flex-wrap: wrap;
         justify-content: center;
         .card {
-            padding-bottom: 12px;
+          padding-bottom: 10px;
           text-align: center;
           h3 {
             font-size: 24px;
@@ -160,7 +163,7 @@ header {
           }
           a {
             color: white;
-            padding: 10px;
+            padding: 10px 33%;
             border: 1px solid red;
             background-color: red;
             transition: all 0.3s;
@@ -171,7 +174,6 @@ header {
               background-color: transparent;
             }
           }
-          border-bottom: 2px solid red;
         }
       }
       .loadMore {
@@ -186,6 +188,51 @@ header {
           color: red;
           background-color: red;
           color: white;
+        }
+      }
+    }
+  }
+}
+
+#watchOfChoice {
+  .container {
+    .watchOfChoice {
+        padding: 5rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .content {
+        width: 36%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        h1 {
+          font-size: 56px;
+        }
+        p {
+          color: gray;
+        }
+        a {
+          width: 50%;
+          text-align: center;
+          color: white;
+          padding: 10px;
+          border: 1px solid red;
+          background-color: red;
+          transition: all 0.3s;
+          &:hover {
+            cursor: pointer;
+            border: 1px solid #4a4a4b;
+            color: red;
+            background-color: #4a4a4b;
+            color: white;
+          }
+        }
+      }
+      .picture {
+        width: 50%;
+        img {
+          width: 90%;
         }
       }
     }

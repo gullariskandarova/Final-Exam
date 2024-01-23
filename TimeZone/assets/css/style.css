@@ -41,6 +41,9 @@ header .container .header nav ul {
 header .container .header nav ul a {
   color: black;
 }
+header .container .header nav ul a:hover {
+  color: red;
+}
 header .container .header .icons {
   display: flex;
   align-items: center;
@@ -131,16 +134,15 @@ header .container .header .icons {
   padding: 10px 0;
 }
 #popular-items .container .popular-items .popular-cards {
-  padding: 20px 0;
+  padding: 50px 0;
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
 }
 #popular-items .container .popular-items .popular-cards .card {
-  padding-bottom: 12px;
+  padding-bottom: 10px;
   text-align: center;
-  border-bottom: 2px solid red;
 }
 #popular-items .container .popular-items .popular-cards .card h3 {
   font-size: 24px;
@@ -153,7 +155,7 @@ header .container .header .icons {
 }
 #popular-items .container .popular-items .popular-cards .card a {
   color: white;
-  padding: 10px;
+  padding: 10px 33%;
   border: 1px solid red;
   background-color: red;
   transition: all 0.3s;
@@ -177,4 +179,45 @@ header .container .header .icons {
   color: red;
   background-color: red;
   color: white;
+}
+
+#watchOfChoice .container .watchOfChoice {
+  padding: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#watchOfChoice .container .watchOfChoice .content {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#watchOfChoice .container .watchOfChoice .content h1 {
+  font-size: 56px;
+}
+#watchOfChoice .container .watchOfChoice .content p {
+  color: gray;
+}
+#watchOfChoice .container .watchOfChoice .content a {
+  width: 50%;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: red;
+  transition: all 0.3s;
+}
+#watchOfChoice .container .watchOfChoice .content a:hover {
+  cursor: pointer;
+  border: 1px solid #4a4a4b;
+  color: red;
+  background-color: #4a4a4b;
+  color: white;
+}
+#watchOfChoice .container .watchOfChoice .picture {
+  width: 50%;
+}
+#watchOfChoice .container .watchOfChoice .picture img {
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */
