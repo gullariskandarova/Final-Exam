@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1199px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+header {
+  background-color: #fff;
+  padding: 20px 0;
+}
+header.scrollHeader {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+header .container .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+header .container .header nav ul a {
+  color: black;
+}
+header .container .header .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#hero-banner .container .hero-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+#hero-banner .container .hero-banner .content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#hero-banner .container .hero-banner .content h1 {
+  color: #0b1c39;
+  font-size: 96px;
+}
+#hero-banner .container .hero-banner .content button {
+  width: 20%;
+  padding: 15px;
+  font-weight: 700;
+  background-color: #4a4a4b;
+  border: none;
+  color: white;
+  transition: all 0.3s;
+}
+#hero-banner .container .hero-banner .content button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#hero-banner .container .hero-banner .picture {
+  display: flex;
+  align-items: center;
+}
+#hero-banner .container .hero-banner .picture img {
+  width: 100%;
+  height: 800px;
+}
+
+#new-arrivals .container .new-arrivals h1 {
+  font-size: 48px;
+  padding: 20px 0;
+}
+#new-arrivals .container .new-arrivals .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+#new-arrivals .container .new-arrivals .cards .card {
+  text-align: center;
+  height: 500px;
+}
+#new-arrivals .container .new-arrivals .cards .card h3 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+#new-arrivals .container .new-arrivals .cards .card p {
+  font-size: 18px;
+  color: red;
+}
+#new-arrivals .container .new-arrivals .cards .card img {
+  width: 400px;
+  height: 500px;
+  margin: 15px 0;
+}
+
+#popular-items .container .popular-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#popular-items .container .popular-items .heading {
+  padding: 10rem 0;
+  text-align: center;
+  width: 50%;
+}
+#popular-items .container .popular-items .heading h1 {
+  font-size: 48px;
+}
+#popular-items .container .popular-items .heading p {
+  font-size: 16px;
+  color: gray;
+  padding: 10px 0;
+}
+#popular-items .container .popular-items .popular-cards {
+  padding: 20px 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#popular-items .container .popular-items .popular-cards .card {
+  padding-bottom: 12px;
+  text-align: center;
+  border-bottom: 2px solid red;
+}
+#popular-items .container .popular-items .popular-cards .card h3 {
+  font-size: 24px;
+  padding: 10px 0;
+}
+#popular-items .container .popular-items .popular-cards .card p {
+  font-size: 18px;
+  color: red;
+  padding: 19px 0;
+}
+#popular-items .container .popular-items .popular-cards .card a {
+  color: white;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: red;
+  transition: all 0.3s;
+}
+#popular-items .container .popular-items .popular-cards .card a:hover {
+  cursor: pointer;
+  border: 1px solid red;
+  color: red;
+  background-color: transparent;
+}
+#popular-items .container .popular-items .loadMore {
+  color: RED;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+#popular-items .container .popular-items .loadMore:hover {
+  cursor: pointer;
+  border: 1px solid red;
+  color: red;
+  background-color: red;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
