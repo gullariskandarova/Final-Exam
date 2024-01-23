@@ -2,7 +2,9 @@ const BASE_URL = "http://localhost:8080";
 const cards = document.querySelector(".popular-cards");
 const header = document.querySelector("header");
 const loadMore = document.querySelector(".loadMore");
+const menu = document.querySelector(".fa-bars");
 let limit = 3;
+
 let productCopy;
 window.addEventListener("scroll", function () {
   header.classList.toggle("scrollHeader", this.scrollY > 0);
@@ -38,4 +40,8 @@ loadMore.addEventListener("click", function () {
   if (limit >= productCopy.length) {
     loadMore.remove();
   }
+});
+
+menu.addEventListener("click", function () {
+  
 });
